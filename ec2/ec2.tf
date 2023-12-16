@@ -82,5 +82,5 @@ resource "aws_instance" "web_server" {
    root_block_device {
     encrypted = true
   # }
-
+   }
 }
