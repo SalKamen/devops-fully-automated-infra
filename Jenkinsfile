@@ -23,8 +23,8 @@ pipeline {
             }
         }
         
-        stage('Terraform init') {
-            steps {
+         stage('Terraform init') {
+             steps {
                 echo 'Initiliazing terraform project...'
                 sh 'sudo terraform init'
                
@@ -81,13 +81,13 @@ pipeline {
             }
         }
         
- #       stage('Terraform destroy') {
- #            steps {
- #               echo 'Terraform destroy...'                             
- #                sh 'sudo terraform destroy --auto-approve'
- #              
-             }
-        }
+      // stage('Terraform destroy') {
+      //    steps {
+      //        echo 'Terraform destroy...'                             
+      //        sh 'sudo terraform destroy --auto-approve'
+             
+     //        }
+     //   }
         
     }
     
