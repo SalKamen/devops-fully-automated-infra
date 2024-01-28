@@ -23,8 +23,8 @@ pipeline {
             }
         }
         
-        stage('Terraform init') {
-            steps {
+         stage('Terraform init') {
+             steps {
                 echo 'Initiliazing terraform project...'
                 sh 'sudo terraform init'
                
